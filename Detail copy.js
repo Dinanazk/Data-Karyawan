@@ -1,17 +1,17 @@
 import * as React from 'react';
 import { View,Text, StyleSheet, Button } from 'react-native';
 
-const About = ({navigation}) => {
+const Detail = ({navigation}) => {
     return (
         <View>
-            <Text>About Screen</Text>
+            <Text>Detail Screen</Text>
             <Button title='Go Back'
+            onPress={()=>navigation.navigate('About')}/>
+
+            <Button title='Go to Home'
             onPress={()=>navigation.navigate('Home')}/>
-         
-            <Button title='Go to Detail'
-            onPress={()=>navigation.navigate('Detail')}/>
         </View>
     );
 };
 
-export default About;
+export default Detail;
